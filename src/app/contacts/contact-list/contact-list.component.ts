@@ -81,4 +81,3 @@ export class ContactListComponent implements OnInit {
     return this.contacts;
   }
 }
-

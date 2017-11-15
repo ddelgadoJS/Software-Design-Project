@@ -50,4 +50,3 @@ export class ContactService {
       console.error(errMsg); // log to console instead
     }
 }
-
