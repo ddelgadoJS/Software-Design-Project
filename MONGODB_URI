@@ -1,1 +1,0 @@
-heroku config:set MONGODB_URI=mongodb://softdesignproject_user:OKg7OaH@ds159235.mlab.com:59235/softdesignproject
