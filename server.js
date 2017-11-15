@@ -1,3 +1,4 @@
+const path  = require("path");
 var express = require("express");
 var bodyParser = require("body-parser");
 var mongodb = require("mongodb");
@@ -111,4 +112,8 @@ app.delete("/api/contacts/:id", function(req, res) {
       res.status(200).json(req.params.id);
     }
   });
+});
+
+app.get("/",function(req,res){
+  res.sendFile(path.join(__dirname,'src/menu.html'));
 });
