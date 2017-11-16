@@ -194,6 +194,11 @@
           	float: center;
           }
           
+          .subtitle{
+			font-size: 18px;
+          	float: left;
+          }
+          
           div{
               float:center;
               margin-right:5px;
@@ -204,18 +209,46 @@
           
           .footbar{
           		margin: 65px 0px 0px 0px;
-          		height: 55px;
           }
           
-          .imageTEC2{
-          	width: 180px;
+          .input-text {
+            margin: 13px; 
+            float: left;
+          	width: 110px;
+          }
+          
+           .input-radio {
+            margin: 20px; 
+            float: left;
+          	width: 100px;
+          }
+          
+          
+          table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+          }
+
+          td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+          }
+
+          tr:nth-child(even) {
+              background-color: #dddddd;
+          }
+          
+          .ver {
+          	padding = 50px;
           }
           
         </style>
     
     </head>
 
-    <body>    
+    <body>
           <div id = "top-bar-container">
                 
 				<button class = "btn default" type="button">A+</button> 
@@ -242,30 +275,52 @@
        <div class = "menu-container">
 
             <div class = "new_line">
-				
-                <p id = "title"> Prestamo Institucional de Edificios </p>
-         </div>
+                <p id = "title"> Reservas activas </p>
+         	</div>
          
-         <div class = "new_line">
-		<form action="/reservaDinamica" method="get">
-			<button class = "btn default btn-menu" type="submit">Reserva edificio (dinamica)</button> 
-		</form> 
-         </div>
-         <div class = "new_line">
-		<form action="/reservaManual" method="get">
-			<button class = "btn default btn-menu" type="submit">Reserva edificio (manual)</button> 
-		</form> 
-         <div class = "new_line">
-		<form action="/consulta" method="get">
-			<button class = "btn default btn-menu" type="submit">Consulta</button> 
-		</form> 
-         </div>   
-            <div class = "new_line">    
-              	<form action="/cancelacion" method="get">
-			<button class = "btn default btn-menu" type="submit">Cancelar</button> 
-		</form> 
-         </div>
-            </div>
+         <table>
+  <tr>
+    <th>Edificio</th>
+    <th>Aposento</th>
+    <th>Tipo</th>
+    <th>Fecha</th>
+    <th>Hora</th>
+    <th>Cancelar</th>
+  </tr>
+  <tr>
+    <td>A5</td>
+    <td>1</td>
+    <td>Auditorio</td>
+    <td>14/11/2017</td>
+    <td>13:00</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2</td>
+    <td>6</td>
+    <td>Aula</td>
+    <td>10/10/2017</td>
+    <td>07:30</td>
+    <td></td>
+  </tr>
+  <tr>
+     <td>B3</td>
+    <td>6</td>
+    <td>Aula</td>
+    <td>14/11/2017</td>
+    <td>09:30</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B3</td>
+    <td>7</td>
+    <td>Aula</td>
+    <td>03/05/2017</td>
+    <td>15:00</td>
+    <td></td>
+  </tr>
+  <tr>
+</table>
 
         </div>
       
@@ -273,7 +328,7 @@
 
             <div class = "menu-bar ">
 
-                <img class = "imageTEC imageTEC2"  src="https://www.tec.ac.cr/sites/all/themes/tec/img/logo.svg">
+                <img class = "imageTEC"  src="https://www.tec.ac.cr/sites/all/themes/tec/img/logo.svg">
 
             </div>
 

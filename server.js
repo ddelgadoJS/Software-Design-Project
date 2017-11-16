@@ -117,3 +117,19 @@ app.delete("/api/contacts/:id", function(req, res) {
 app.get("/",function(req,res){
   res.sendFile(path.join(__dirname,'src/menu.html'));
 });
+
+app.get("/reservaDinamica",function(req,res){
+  res.sendFile(path.join(__dirname,'src/reservaDinamica.html'));
+});
+
+app.get("/reservaManual",function(req,res){
+  res.sendFile(path.join(__dirname,'src/reservaManual.html'));
+});
+
+app.get("/consulta",function(req,res){
+  res.sendFile(path.join(__dirname,'src/consulta.html'));
+});
+
+app.get("/cancelacion",function(req,res){
+  res.sendFile(path.join(__dirname,'src/cancelacion.html'));
+});
