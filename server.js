@@ -133,3 +133,7 @@ app.get("/consulta",function(req,res){
 app.get("/cancelacion",function(req,res){
   res.sendFile(path.join(__dirname,'src/cancelacion.html'));
 });
+
+app.get("/seleccionarInvitados",function(req,res){
+  res.sendFile(path.join(__dirname,'src/seleccionarInvitados.html'));
+});
